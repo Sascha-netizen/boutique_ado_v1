@@ -111,6 +111,18 @@ AUTH_PASSWORD_VALIDATORS = [
 
 SITE_ID = 1
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'  # login via username or email
+ACCOUNT_EMAIL_REQUIRED = True                     # email is mandatory
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'         # user must confirm email
+ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = True       # prevents typos
+ACCOUNT_USERNAME_MIN_LENGTH = 4                  # min length for username
+
+LOGIN_URL = '/accounts/login/'                   # login page
+LOGIN_REDIRECT_URL = '/'                  # temporary page after login
+
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
