@@ -43,6 +43,12 @@ body {
     color: black !important; /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
+.btn-outline-black:hover,
+.btn-outline-black:active,
+.btn-outline-black:focus {
+    background: black;
+    color: white !important;
+}
 
 .shop-now-button:hover,
 .shop-now-button:active,
@@ -77,7 +83,7 @@ body {
 }
 
 a.category-badge > span.badge:hover {
-    background:  #212529 !important;
+    background: #212529 !important;
     color: #fff !important;
 }
 
@@ -88,7 +94,10 @@ a.category-badge > span.badge:hover {
     bottom: 10px;
     right: 10px;
 }
-.btt-link {
+
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 
