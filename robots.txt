@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Sitemap: https://boutique-ado-practice-project-5cc6d1fbf45b.herokuapp.com/sitemap.xml
